@@ -156,3 +156,42 @@ fieldset {
   margin: 0;
   min-width: 0;
 }
+
+@media screen and (min-width: 768px) {
+
+  header {
+    border: none;
+  }
+
+  input[type="zip"] {
+    width: 35%;
+  }
+
+  form, #newsletter-header {
+    width: 50%;
+    margin: auto;
+  }
+
+  #border-bottom {
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: auto;
+  }
+
+  #newsletter-header {
+    margin-top: 2rem;
+  }
+
+  #newsletter-explanation {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5rem;
+  }
+
+  /* .field {
+    display: flex;
+    width: 100%;
+  }  */
+
+}
