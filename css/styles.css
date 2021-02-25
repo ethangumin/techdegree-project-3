@@ -3,7 +3,11 @@ font-family: 'Merriweather', serif;
 font-size: 75%;
 }
 
-button, ::placeholder, input, textarea, select {
+header {
+  border-bottom: 2px solid black;
+}
+
+button, ::placeholder, input, textarea, select, legend {
   font-family: 'Merriweather';
 }
 
@@ -33,13 +37,13 @@ label, footer {
 
 #newsletter-explanation {
   padding-bottom: 2rem;
+  margin-bottom: 4px;
   border-bottom: 4px solid black;
   color: Gray;
 
 }
 
 #form-header {
-  border-top: 2px solid black;
   padding-top: 1.5rem;
   margin-top: -0.5rem;
 }
@@ -53,6 +57,10 @@ form {
   font-size: larger;
 }
 
+#newsletter-type, #nwsltr-format-header, .radio-pair, #other-heading {
+  margin-left: 0.5rem;
+}
+
 #contact-info label {
   display: block;
 }
@@ -63,15 +71,20 @@ form {
   padding-right: 1rem;
 }
 
-
-
 #contact-info input {
   margin-top: 0.5rem;
   height: 3rem;
 }
 
+
+
 .field {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.field:last-of-type {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid black;
 }
 
 .checkbox-pair, .radio-pair {
@@ -79,7 +92,6 @@ form {
 }
 
 #newsletter-title {
-  border-top: 2px solid black;
   padding-top: 2rem;
 }
 
@@ -132,4 +144,15 @@ button {
 
 option[value="none"] {
   color: Gray;
+}
+
+legend {
+  padding: 1rem 0;
+  display: table;
+}
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
 }
