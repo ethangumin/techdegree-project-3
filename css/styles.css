@@ -11,6 +11,15 @@ button, ::placeholder, input, textarea, select, legend {
   font-family: 'Merriweather';
 }
 
+*:focus {
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #2f4f4f;
+  background-color: AliceBlue;
+}
+
 input, textarea, select {
   color: Gray;
 }
@@ -53,7 +62,7 @@ form {
   flex-direction: column;
 }
 
-.field-heading, #newsletter-type, #nwsltr-format {
+.field-heading, #newsletter-type, #nwsltr-format, #other {
   font-size: larger;
 }
 
@@ -112,7 +121,7 @@ textarea {
   width: 98%;
 }
 
-input[type="zip"] {
+input[type="number"] {
   width: 50%;
 }
 
@@ -139,6 +148,8 @@ button {
   background-color: #20b2aa;
   border-color: #20b2aa;
   color: white;
+  font-size: large;
+  font-weight: bold;
   border-radius: 5px;
 }
 
@@ -163,7 +174,7 @@ fieldset {
     border: none;
   }
 
-  input[type="zip"] {
+  input[type="number"] {
     width: 35%;
   }
 
@@ -189,9 +200,27 @@ fieldset {
     padding-bottom: 2.5rem;
   }
 
-  /* .field {
+  .field {
     display: flex;
-    width: 100%;
-  }  */
+  }
+
+  #contact-info label {
+    position: absolute;
+    padding-top: 1rem;
+  }
+
+  #contact-info input[type="text"], #contact-info input[type="email"], #contact-info input[type="tel"] {
+    width: 60%;
+    margin-left: auto;
+  }
+
+  input[type="number"] {
+    margin-left: 38%;
+  }
+
+  select {
+    width: 62%;
+    margin-left: auto;
+  }
 
 }
