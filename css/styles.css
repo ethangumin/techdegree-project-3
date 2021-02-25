@@ -1,3 +1,135 @@
 html {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Merriweather', serif;
+font-size: 75%;
+}
+
+button, ::placeholder, input, textarea, select {
+  font-family: 'Merriweather';
+}
+
+input, textarea, select {
+  color: Gray;
+}
+
+label, footer {
+  color: #686868;
+}
+
+#site-header {
+  background-color: #2f4f4f;
+  color: white;
+  margin: -0.75rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+#site-header, #newsletter-header, #newsletter-explanation,  footer {
+  text-align: center;
+}
+
+#newsletter-header {
+  padding-top: 1.5rem;
+}
+
+#newsletter-explanation {
+  padding-bottom: 2rem;
+  border-bottom: 4px solid black;
+  color: Gray;
+
+}
+
+#form-header {
+  border-top: 2px solid black;
+  padding-top: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-heading, #newsletter-type, #nwsltr-format {
+  font-size: larger;
+}
+
+#contact-info label {
+  display: block;
+}
+
+::placeholder {
+  font-style: italic;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+
+
+#contact-info input {
+  margin-top: 0.5rem;
+  height: 3rem;
+}
+
+.field {
+  padding-bottom: 1rem;
+}
+
+.checkbox-pair, .radio-pair {
+  padding: 0.5rem;
+}
+
+#newsletter-title {
+  border-top: 2px solid black;
+  padding-top: 2rem;
+}
+
+#nwsltr-format {
+  margin-top: 1rem;
+}
+
+#other {
+  margin: 1.5rem 0;
+}
+
+textarea {
+  margin: 1rem 0;
+  height: 7rem;
+}
+
+#contact-info input[type="text"], #contact-info input[type="email"], #contact-info input[type="tel"], textarea {
+  width: 98%;
+}
+
+input[type="zip"] {
+  width: 50%;
+}
+
+select {
+  width: 100%;
+  margin-top: 0.5rem;
+  height: 3.75rem;
+}
+
+input, select, textarea {
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+  border-radius: 5px;
+}
+
+#html-news, #html-format {
+  margin-top: 0.75rem;
+}
+
+button {
+  margin-bottom: 1.25rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #20b2aa;
+  border-color: #20b2aa;
+  color: white;
+  border-radius: 5px;
+}
+
+option[value="none"] {
+  color: Gray;
 }
